@@ -16,27 +16,19 @@
         <legend>Personal information</legend>
         <label class="form_field">
           Surname:
-          <input 
-            type="text" 
-            name="Surname" 
-            autocomplete="off" 
-            required
+          <input type="text" name="Surname" 
+            autocomplete="off" required
           >
         </label>
         <label class="form_field">
           Name:
-          <input 
-            type="text" 
-            name="Name" 
-            autocomplete="off" 
-            required
+          <input type="text" name="Name" 
+            autocomplete="off" required
           >
         </label>
         <label class="form_field">
           How old are You?
-          <input 
-            type="number" 
-            name="Age" 
+          <input type="number" name="Age" 
             min="1" max="100" 
             value="12"
           >
@@ -47,9 +39,7 @@
         </label>
         <label class="form_field">
           I accept the term of the agreement
-          <input 
-            type="checkbox" 
-            name="Agree" 
+          <input type="checkbox" name="Agree" 
             required
           >
         </label>
@@ -58,37 +48,30 @@
         <legend>Registration</legend>
         <label class="form_field">
           E-mail:
-          <input 
-            type="email" 
-            name="Email" 
+          <input type="email" name="Email" 
             placeholder="email@example.com"
           >
         </label>
         <label class="form_field">
           Password:
-          <input 
-            type="password" 
-            name="Password" 
-            minlength="3" 
-            maxlength="32"
+          <input type="password" name="Password" 
+            minlength="3" maxlength="32"
           >
         </label>
       </fieldset>
       <fieldset class="form_group">
         <legend>An interesting fact about you!</legend>
-        <label class="form_field">
+        <div class="form_field">
           Do you love cats?
-          <input 
-            type="radio" 
-            name="Cats" 
-            value="Y"
-          > Yes
-          <input 
-            type="radio" 
-            name="Cats" 
-            value="N"
-          > No
-        </label>
+          <input type="radio" name="Cats" 
+            value="Y" id="radio-y"
+          >
+          <label for="radio-y">Yes</label>
+          <input type="radio" name="Cats" 
+            value="N" id="radio-n"
+          >
+          <label for="radio-n">No</label>
+        </div>
         <label class="form_field">
           What is your favorite color?
           <input type="color" name="color">
@@ -109,8 +92,7 @@
         </label>
         <label class="form_field">
           How do you rate our work?
-          <input 
-            type="range" name="Rate"
+          <input type="range" name="Rate"
             value="50"
           >
         </label>
@@ -119,11 +101,10 @@
         <legend>Additional info:</legend>
         <label class="form_field">
           Comments:
-          <textarea 
-            name="Comment" 
+          <textarea name="Comment" 
             cols="10" rows="2"
-          >
-          </textarea>
+            wrap="hard"
+         ></textarea>
         </label>
         <label class="form_field">
           Would you recommend us?
